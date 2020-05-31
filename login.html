@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<title>Log in - Notarised</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<div class="row">
+			<!-------- Image -------->
+			<div id="bgImg" class="col-md-8 order-xs-first order-md-last">
+				<img class="mobilelogo" src="img/notarised-logo.png">
+			</div>
+			<!-------- Log In Form -------->
+			<div id="loginForm" class="col-md-4 order-xs-last order-md-first">
+				<div class="contentcontainer">
+					<img class="logo" src="img/notarisedlogo.jpg">
+					<h1 class="logintext">Log in to your account!</h1>
+					<form action="#" method="get">
+						<div class="form-group formfields">
+							<label for="username">Username</label>
+							<input type="text" class="form-control input" id="username">
+						</div>
+						<div class="form-group formfields">
+							<label for="password" id="pwLabel">Password</label>
+							<input type="password" class="form-control input" aria-describedby="passwordHelp" id="password">
+							<i id="visBtn" class="fa fa-eye-slash visbtn text-muted"></i>
+						</div>
+						<small id="passwordHelp" class="form-text smalltext errormessage">Error message goes here.</small>
+						<div class="form-check">
+							<label id="labelCheckbox" class="form-check-label smalltext text-muted d-inline pl-2" for="rememberMe">
+								<input type="checkbox" class="form-check-input checkbox" id="rememberMe">
+								<span class="customcheckbox"></span>
+								Remember Me!
+							</label>
+							<p class="smalltext text-muted d-inline float-right forgotpass">Forgot password?</p>
+						</div>
+						<button type="submit" id="logInBtn" class="btn submitbtn shadow-none" href="">Log in</button>
+					</form>
+					<p class="createacc">Need a Notarised account? <span class="create"><a href="#"> Create!</a></span></p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/script.js"></script>
+</html>
