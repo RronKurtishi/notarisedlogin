@@ -286,6 +286,7 @@ label input:checked ~ .customcheckbox:after {
 	}
 
 	#bgImg {
+		min-height: 0;
 		height: 30vh;
 		background-position: center;
 		background-size: 150%;
