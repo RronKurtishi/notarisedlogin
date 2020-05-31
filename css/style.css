@@ -1,0 +1,313 @@
+/*********** RESET BASE CSS ***********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Inter', sans-serif;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********** RESET BOOTSTRAP 4 ***********/
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:select,
+button:hover,
+label:focus,
+btn:focus,
+btn:active {
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-box-shadow: none;
+	box-shadow: none !important;
+	outline: none !important;
+}
+
+.form-control {
+	height: 0;
+}
+
+/*********** GENERAL ***********/
+a {
+	color: #2E87C3;
+}
+
+.smalltext {
+	font-size: 0.7rem;
+}
+
+.contentcontainer {
+	width: 70%;
+	margin: auto;
+}
+
+/*********** IMAGE ***********/
+
+#bgImg {
+	background:linear-gradient(300deg, rgba(29, 41, 81, 0.3) 0%, rgba(73, 86, 127, 0.75) 100%), url(../img/image_1.jpg);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*********** PRE-FORM CONTENT ***********/
+.logo {
+	height: 22px;
+	width: auto;
+	margin: 70px 0;
+}
+
+.mobilelogo {
+	display: none;
+}
+/*********** FORM ***********/
+form {
+	width: 90%;
+}
+
+.formfields {
+	border: solid 1px #C9D6DF;
+	border-radius: 6px;
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.formfields input {
+	border: none;
+	padding: 27px 15px 15px;
+	font-size: 0.9rem;
+	color: #1D2951;
+	font-weight: 500;
+}
+
+.formfields input:focus {
+	appearance: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+	color: #1D2951;
+}
+
+.formfields.active {
+	border-color: #1D2951;
+}
+
+.formfields.active label {
+  transform: translate(2px, 1px) scale(.85);
+}
+
+.formfields label {
+	color: #1D2951;
+	font-weight: 500;
+	position: absolute;
+	font-size: 0.9rem;
+	margin-bottom: 0;
+	padding: 5px 15px 0 15px;
+	transform-origin: top left;
+	transform: translate(0, 7px);
+	user-select: none; 
+	z-index: 10;
+}
+
+.logintext {
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.submitbtn {
+	width: 100%;
+	background: #303C63;
+	color: #FFF;
+	margin: 20px 0 0 0;
+	font-weight: 500;
+	padding: 8px 0;
+	border-radius: 6px;
+}
+
+.submitbtn:hover {
+	color: #FFF;
+	background: #152352;
+}
+
+/*********** POST-FORM CONTENT ***********/
+.createacc {
+	margin: 100px 0;
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+
+.create {
+	text-decoration: underline #2E87C3;
+}
+
+.errormessage {
+	color: #FF5555;
+	margin: -8px 0 15px 13px;
+	display: none;
+}
+
+.checkbox {
+	border: 1px solid #C9D6DF;
+	border-radius: 6px;
+	padding: 5px;
+	display: inline-block;
+	position: relative;
+}
+
+.visbtn {
+	position: absolute;
+	font-size: 1.2rem !important;
+	color: #1D2951;
+	cursor: pointer;
+	display: inline-block;
+	top: 10px;
+	right: 8px;
+}
+
+.forgotpass {
+	margin-top: 3px;
+	cursor: pointer;
+	user-select: none; 
+}
+
+#labelCheckbox {
+	cursor: pointer;
+	user-select: none; 
+}
+
+label .checkbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+label .customcheckbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	border: 1px solid #C9D6DF;
+}
+
+label input:checked ~ .customcheckbox {
+	background-color: #303C63;
+	border-radius: 6px;
+	opacity: 1;
+	border: 1px solid #FFFFFF;
+}
+
+label .customcheckbox:after {
+	position: absolute;
+	content: "";
+	left: 12px;
+	top: 12px;
+	height: 0px;
+	width: 0px;
+	border-radius: 6px;
+	border: solid #FFFFFF;
+	border-width: 0 3px 3px 0;
+	opacity: 1;
+}
+
+label input:checked ~ .customcheckbox:after {
+	-webkit-transform: rotate(45deg) scale(1);
+	-ms-transform: rotate(45deg) scale(1);
+	transform: rotate(45deg) scale(1);
+	opacity: 1;
+	left: 5px;
+	top: 1px;
+	width: 6px;
+	height: 12px;
+	border: solid #FFFFFF;
+	border-width: 0 2px 2px 0;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+/*********** RESPONSIVE LAYOUT FIXES ***********/
+@media (max-width: 767px) {
+	.logo {
+		display: none;
+	}
+
+	#bgImg {
+		height: 30vh;
+		background-position: center;
+		background-size: 150%;
+	}
+
+	.logintext {
+		margin-top: 30px;
+	}
+
+	.contentcontainer {
+		width: 90%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	.mobilelogo {
+		display: block;
+		height: 40px;
+		vertical-align: middle;
+		margin-top: 12vh;
+		padding-left: 20px;
+	}
+}
